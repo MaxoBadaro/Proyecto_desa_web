@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-area">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>    
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <img src="images/logo.png" alt="logo">
+        <h1>Como podemos ayudarte?</h1>
+        <h2>Déjanos un mensaje</h2>
+    </header>
+    <main class="container2">
+        <form>
+            <div class="contenedor-contacto">
+
+                <label class="form-nombre" for="nombrecompleto">
+                    Nombre y apellido:<input class="input" type="text" name="nombrecompleto">
+                </label>
+                   
+                <label class="form-email" for="e-mail">
+                   Tu e-mail:<input type="email"name="e-mail" class="input" placeholder="usuario@gmail.com">
+               </label>
+               
+               <label class="form-edad" for="edades">Tu edad:
+                   <select name="edades">
+                       <option value="<18">Menor de 18</option>
+                       <option value=">18 y <30">Entre 18 y 30</option>
+                       <option value=">30 y <50">Entre 30 y 50</option>
+                       <option value=">50">Más de 50</option>
+                   </select>   
+               </label>
+
+               <label class="form-telefono" for="Telefono">
+                   Telefono (opcional)<input class="input" type="number" name="Telefono">
+               </label>
+
+               <label id="form-mensaje" for="comenatario" class="botondiseno">
+                    Cuentanos en que podemos ayudarte, lo que sea <br><textarea name="comenatario" cols="30" rows="10"></textarea>
+                 </label>
+                
+                <label for="notificaciones">
+                    <br>    
+                    <div id="boton-check">Checkee el box paa recibir notificaciones y noticias
+                        <input class="input" type="checkbox" name="acepta" value="1">
+                    </div>
+                </label> 
+                <input class="boton-enviar" type="submit" value="Enviar">
+                <input type="reset" class="boton-limpiar" value="Resetear">    
+        </form>   
+       </main>
+    <footer class="footer">
+        <div class="footer-referencias">
+            <h2>Ziba para lo que necesites</h2>
+            <a href="quienes_somos.html">Quienes somos</a>
+            <br>
+            <a href="contacto.html">Presupuesto</a>
+        </div>
+        <div>
+            <h2>Sigamos conectados</h2>
+            <a href="https://www.instagram.com/"><ion-icon class="iconos" name="logo-instagram"></ion-icon></a>
+            <a href="https://www.youtube.com/"><ion-icon class="iconos" name="logo-youtube"></ion-icon></a>
+            <a href="https://ar.pinterest.com/"><ion-icon class="iconos" name="logo-pinterest"></ion-icon></a>
+            <a href="https://www.facebook.com/"><ion-icon class="iconos" name="logo-facebook"></ion-icon></a>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        </div>
+    </footer>        
+</body>
+</html>
