@@ -9,48 +9,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;800&display=swap" rel="stylesheet">
+    <!--Bootstrap link para hacerlo online, solo con eso-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menu-area">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>    
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="quienes_somos.html">Quienes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="#">
+                <img src="./images/media/ziba-amarillo.png" alt="" width="55" height="45">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+               </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html"><strong>Home</strong></a>
+                  <a class="nav-link" href="productos.html">Productos</a>
+                  <a class="nav-link" href="promociones.html">Promociones</a>
+                  <a class="nav-link" href="quienes_somos.html"><strong>Quienes Somos</strong></a>
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+              </div>
+             </div>
+          </nav>
         <img src="images/logo.png" alt="logo">
         <h1>Sobre Nosotros</h1>
     </header>
-    <main class="quienes-somos-flex">
-        <div class="div-quienes-somos">
-            <ion-icon class="tamano" name="bonfire-outline"></ion-icon>
-            <h2>Nuestra Misión</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolore.</p>
+    <main>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                    <div class="div-quienes-somos col-sm-5 col-md-4 col-lg-2">
+                        <ion-icon class="tamano" name="bonfire-outline"></ion-icon>
+                        <h2>Nuestra Misión</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolore.</p>
+                    </div>
+                    <div class="div-quienes-somos col-sm-5 col-md-4 col-lg-2">
+                        <ion-icon class="tamano" name="flask-outline"></ion-icon>   
+                        <h2>Nuestra escencia</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolore.</p>
+                    </div>
+            
+                    <div class="div-quienes-somos col-sm-5 col-md-4 col-lg-2">
+                        <ion-icon class="tamano" name="ribbon-outline"></ion-icon>    
+                        <h2>Nuestra Promesa</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolore.</p>
+                    </div>
+            
+                    <div class="div-quienes-somos col-sm-5 col-md-4 col-lg-2">
+                        <ion-icon class="tamano" name="radio-outline"></ion-icon>
+                        <h2>Nuestra Vibra</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa.</p>
+                    </div>
+                </div>    
+            </div>      
+            <!--IMPORTANTE COPIAR LO DE ABAJO-->
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         </div>
-
-        <div class="div-quienes-somos">
-            <ion-icon class="tamano" name="flask-outline"></ion-icon>   
-            <h2>Nuestra escencia</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolore.</p>
-        </div>
-
-        <div class="div-quienes-somos">
-            <ion-icon class="tamano" name="ribbon-outline"></ion-icon>    
-            <h2>Nuestra Promesa</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolore.</p>
-        </div>
-
-        <div class="div-quienes-somos">
-            <ion-icon class="tamano" name="radio-outline"></ion-icon>
-            <h2>Nuestra Vibra</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe culpa.</p>
-        </div>
-        <!--IMPORTANTE COPIAR LO DE ABAJO-->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </main>
     <footer class="footer">
         <div class="footer-referencias">
@@ -67,6 +83,9 @@
             <a href="https://www.facebook.com/"><ion-icon class="iconos" name="logo-facebook"></ion-icon></a>
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         </div>
-    </footer>  
+    </footer> 
+    <!--Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> 
 </body>
 </html>

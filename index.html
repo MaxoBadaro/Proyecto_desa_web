@@ -14,78 +14,33 @@
 </head>
 <body>
     <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light">
-          <a href="#" class="navbar-brand">Home</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#toggleMobileMenu"
-            aria-controls="toggleMobileMenu"
-            aria-expanded="false"
-            aria-table="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="toggleMobilemenu">
-            <ul class="navbar-nav text-center">
-              <li>
-                <a class="nav-link" href="#">Productos</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Promociones</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Quienes Somos</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-
-      <!--
-        <nav>
-            <ul class="menu-area">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>    
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="quienes_somos.html">Quienes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+             <a class="navbar-brand" href="#">
+              <img src="./images/media/ziba-amarillo.png" alt="" width="55" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html"><strong>Home</strong></a>
+                <a class="nav-link" href="productos.html">Productos</a>
+                <a class="nav-link" href="promociones.html">Promociones</a>
+                <a class="nav-link" href="quienes_somos.html">Quienes Somos</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+           </div>
+        </nav>  
+       <!-- 
+      <img src="images/logo.png" alt="logo">  
+      <h1>Bienvenidos a Zibá Colores</h1>
+      <h2>Donde tus apuntes toman vida</h2>
       -->
-        <img src="images/logo.png" alt="logo">  
-        <h1>Bienvenidos a Zibá Colores</h1>
-        <h2>Donde tus apuntes toman vida</h2>
     </header>
 
-    <!--
-    <main class="contenedor">
-        <div class="contenedor-promo_amigo">
-            <h2>Día del amigo</h2>
-            <div class="circulo"><p>Hasta 50% off</p></div>
-            <p>Aprovecha las increibles ofertas <br> para sorprender con un regalo <br> del amigo invisible</p>
-            <a href="promociones.html">VER OFERTAS</a> 
-            <img src="images/apuntes.jpg" alt="apuntes">
-        </div>
-        <div class="contenedor-metalizados">
-            <img src="images/metalizados.jpg" alt="resaltadores">
-            <h3>Nuevos Metalizados</h3>
-            <a class="botones" href="productos.html">Comprar</a>
-        </div>
-        <div class="contenedor-cajas">                
-            <img src="images/faber castell.jpg" alt="cajita linda">
-            <h3>Cajas personalizadas</h3>
-            <a class="botones" href="promociones.html">Comprar</a>
-        </div>
-        <div class="contenedor-todosloscolores">
-            <img src="images/notas de colores.png" alt="post it´s">
-            <h3>Todos los colores</h3>
-            <a class="botones" href="productos.html">Comprar</a> 
-        </div>
-    </main> -->
+    <!--Carrusel comienza-->
 
     <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -125,44 +80,55 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+          <!-----------Carrusel termina-------------->
 
-<!------------------------------------------------------->
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Some example text. Some example text.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <!--Secciones de promociones de las paginas-->
+    <h1>Bienvenidos a Zibá Colores</h1>
+    <h2>Donde tus apuntes toman vida</h2>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-xs-12 col-md-6 col-sm-6" class="container-fluid" id="texto">
+              <div class="row" class="col-xs-12 col-md-12 col-sm-12">
+                  <h2>Colección</h2>
+              </div>
+              <div class="row" class="col-xs-12 col-md-12 col-sm-12">
+                  <p>En Ziba somos exigentes para ofrecerte <br> lo mejor para el estudio <br>Checalo!!</p>
+              </div>
+              <button type="button" class="btn btn-warning"><a href="./productos.html">Ver Productos</a></button>
+          </div>
+          <div class="col-xs-12 col-md-6 col-sm-6">
+              <img class="img-fluid" src="./images/media/imagen_1.jpg" alt="resaltador">
+          </div>
       </div>
-    </div>
-
-    <div class="card-group">
-      <div class="card" style="width:400px">
-        <img class="card-img-top" src="images/metalizados.jpg" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text.</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
+      <div class="row" id="flex">
+          <div class="col-xs-12 col-md-6 col-sm-6" >
+              <img class="img-fluid" src="./images/media/pexels-alexander-suhorucov-6457610.jpg" alt="resaltador2">
+          </div>
+          <div class="col-xs-12 col-md-6 col-sm-6" class="container-fluid" id="texto">
+              <div class="row" class="col-xs-12 col-md-12 col-sm-12">
+                  <h2>Día del amigo</h2>
+              </div>
+              <div class="row" class="col-xs-12 col-md-12 col-sm-12">
+                  <p>Se acerca la fecha para festejar a ese compa <br> de estudio que se hizo un buen amigo</p>
+              </div>
+              <button type="button" class="btn btn-warning"> <a href="./promociones.html">Ver regalos</a></button>
+          </div>
       </div>
-      <div class="card" style="width:400px">
-        <img class="card-img-top" src="images/metalizados.jpg" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text.</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
-      <div class="card" style="width:400px">
-        <img class="card-img-top" src="images/metalizados.jpg" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text.</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
-    </div>
-
+      <div class="row">
+          <div class="col-xs-12 col-md-6 col-sm-6" class="container-fluid" id="texto">
+              <div class="row" class="col-xs-12 col-md-12 col-sm-12">
+                  <h2>O-F-E-R-T-O-N-E-S</h2>
+              </div>
+              <div class="row" class="col-xs-12 col-md-12 col-sm-12">
+                  <p>Mirá lo nuevo que ingresó <br> y los descuentos que preparamos <br> para vos </p>
+              </div>
+              <button type="button" class="btn btn-warning"><a href="./promociones.html">Ver ofertas</a></button>
+          </div>
+          <div class="col-xs-12 col-md-6 col-sm-6">
+              <img class="img-fluid" src="./images/media/imagen_3.jpg" alt="foto arquitectura">
+          </div>
+      <div>
+        <!--Fin promociones de la paginas-->
     <br>
     <footer class="footer">
         <div class="footer-referencias">
@@ -180,8 +146,8 @@
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         </div>
     </footer>
-<!--Bootstrap script-->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  <!--Bootstrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 </html>
