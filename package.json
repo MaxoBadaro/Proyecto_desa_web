@@ -1,0 +1,26 @@
+{
+  "name": "proyecto_desa_web",
+  "version": "1.0.0",
+  "description": "En este repo iré subiendo mis avances en el curso de \"Desarrollo Web\" a través de las distintas entregas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxoBadaro/Proyecto_desa_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxoBadaro/Proyecto_desa_web/issues"
+  },
+  "homepage": "https://github.com/MaxoBadaro/Proyecto_desa_web#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {}
+}

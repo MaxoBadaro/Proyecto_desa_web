@@ -1,0 +1,323 @@
+$marronclaro:beige;
+$amarilloclaro:rgb(190, 140, 74);
+$blanco:#ffffff;
+$amarillomenos: rgb(173, 129, 70);
+$colorado: coral;
+$choc:chocolate;
+$burly:burlywood;
+$negro:black;
+$sombra:rgba(0,0,0,8) 0px 0px 15px;
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Nunito', sans-serif;
+   font-size: 16px;
+   text-align: center;
+   word-spacing: 3px;
+   background-color:beige;
+}
+/*Logo de todas las páginas*/
+#logo{
+   margin-top: 1em;
+}
+
+
+/*index Bootstrap*/
+
+@media (max-width: 575px){
+   #flex{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+}
+
+/*Espacios para los divs*/
+.row{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#texto{
+    padding-left: 3em;
+    padding-bottom: 1em; 
+}
+.slide {
+   margin-top: 10px;    
+}
+.slide img {
+   height: 65vh;
+}
+
+/*MENU*/
+
+.menu-area{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   background: $amarilloclaro;
+   margin-bottom: 1em;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: uppercase;
+   box-shadow: $amarilloclaro 0px 0px 15px ;
+   li:hover {
+      background-color: $amarillomenos;
+   }
+   li a{
+      display: block;
+      padding: 10px 22px;
+      color: $blanco;
+      text-decoration: none;
+      margin: 3em 1em;
+   }
+}
+
+/*HOME*/
+
+.contenedor{
+    display: grid;
+    grid-template-areas:
+    "b1 b1 b1"
+    "b2 b3 b4"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60% 40%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+.contenedor img{
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+.botones{
+    color: $negro;
+    text-decoration: none;
+    background-color: $colorado;
+    border-radius: 5PX;
+    padding: 2px;
+}
+.botones:hover{
+    background-color: $choc;
+}
+
+.contenedor-promo_amigo{
+    grid-area: b1;
+    background-color: $burly;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    justify-content: center ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+.contenedor-metalizados{
+    grid-area: b2;
+    background-color: $burly;
+    margin-left: 1em;
+    border-radius: 5px;
+    padding: 1em;
+
+}
+.contenedor-cajas{
+    grid-area: b3;
+    background-color: $burly;
+    border-radius: 5px;
+    padding: 1em;
+}
+.contenedor-todosloscolores{
+    grid-area: b4;
+    background-color: $burly;
+    margin-right: 1em;
+    border-radius: 5px;
+    padding: 1em;
+}
+ 
+ 
+/*PROMOCIONES*/
+ 
+  
+ /*PRODUCTOS*/
+  
+ .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    /*justify-content: space-evenly;*/
+    flex-wrap: wrap
+ }
+  
+ .box {
+    div{
+        background-color:$blanco;
+        height: 350px;
+        width: 350px;
+        border: solid $burly 1px;
+        border-radius: 10px;
+        margin: 15px;
+     }
+ }
+ .box img{
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+ }
+  
+ /*QUIENES SOMOS*/
+  
+.quienes-somos-flex{
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   font-weight: bold;
+   justify-content: space-evenly;
+   height: 30em;
+   align-items: center;
+ }
+ /*Para el tamaño de las imagenes*/
+ .tamano{
+    height: 6em;
+    width: 6em;
+ }
+.div-quienes-somos{
+   background: $burly;
+   margin: 1em;
+   height: 25em;
+   width: 15em;
+}
+
+/*CONTACTO*/
+
+/*Lo hace responsive*/
+@media (max-width: 800px){
+   #contacto{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+   }
+}
+
+
+form{
+   margin-bottom: 2em;
+   margin-top: 2em;
+}
+
+.container2{
+   display: flex;
+   height: 40em;
+   justify-content: center;
+   align-items: center;  
+}
+
+.contenedor-contacto {
+   background-color: $blanco ;
+   width: 51em;
+   height: 37em;
+   box-shadow: $sombra;
+   justify-content: center;
+   align-items: center;
+   border-radius:10px;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows:  1fr 1fr 1fr 1fr;
+   grid-template-areas:
+   "tres dos"
+   "cuatro uno"
+   "cinco seis"
+   "siete ocho"
+   ;
+   text-align: left;
+   padding: 25px;
+   margin: 10px;
+   grid-column-gap: 2em;
+   grid-row-gap: 2em;
+   font-weight: bold;
+}
+
+.form-email{
+   grid-area: uno;
+}
+.form-nombre{
+   grid-area: dos;
+}
+.form-edad{
+   grid-area: tres;
+}
+.form-telefono{
+   grid-area: cuatro;
+}
+#form-mensaje{
+   grid-area: cinco ;
+}
+#boton-check{
+   grid-area: seis;
+}
+.boton-enviar{
+   grid-area: siete;
+}
+.boton-limpiar{
+   grid-area: ocho;
+}
+
+
+/*FOOTER*/
+
+ .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background:$amarilloclaro;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    box-shadow: $amarilloclaro 0px 0px 15px ;
+ }
+ .iconos{
+    height: 3em;
+    width: 3em;
+    color: $negro;
+ }
+ .footer-referencias a{
+    color: $negro;
+    text-decoration-color: $negro;
+}
+
+/*Bootstrap*/
+.card{
+   background-color: rgb(204, 162, 107);
+   margin-top: 2em;
+   margin-right: 1em;
+   margin-left: 1em;
+}
+
+#carouselExampleCaptions{
+   padding-left: 1em;
+   padding-right: 1em;
+   border-radius: 10px;
+}
+p {
+   font-weight:bold
+}
+h5 {
+   font-weight:bold
+}
+h1{
+   font-weight:bold
+}
+h2{
+   font-weight:bold
+}
+
+
