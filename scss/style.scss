@@ -54,7 +54,7 @@ body {
 
 /*MENU*/
 
-.menu-area{
+.menu-area{ /*esto parece que ni anda e*/
    list-style: none;
    display: flex;
    flex-direction: row;
@@ -75,6 +75,24 @@ body {
       text-decoration: none;
       margin: 3em 1em;
    }
+}
+
+#navbar{
+   background-color: burlywood;
+   padding-top: 0;
+   padding-bottom: 0;
+   .navbar-brand{
+      margin-left: 1em; /*Por alguna razón solo me hace un margin a la derecha, con esto lo igualo*/
+   }
+   .a{
+      color:white !important;
+   }
+}
+
+.navbar-nav{
+
+   display: flex;
+   align-items: center; /*Para ordenarlo horizontalemnte porque agregé el logo en el medio*/
 }
 
 /*HOME*/
