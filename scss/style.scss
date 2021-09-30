@@ -84,9 +84,6 @@ body {
    .navbar-brand{
       margin-left: 1em; /*Por alguna razón solo me hace un margin a la derecha, con esto lo igualo*/
    }
-   .a{
-      color:white !important;
-   }
 }
 
 .navbar-nav{
@@ -320,11 +317,6 @@ form{
    margin-left: 1em;
 }
 
-#carouselExampleCaptions{
-   padding-left: 1em;
-   padding-right: 1em;
-   border-radius: 10px;
-}
 p {
    font-weight:bold
 }
