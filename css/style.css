@@ -30,34 +30,39 @@ body {
   padding-left: 3em;
   padding-bottom: 1em; }
 
-.slide {
-  margin-top: 10px; }
-
 .slide img {
-  height: 65vh; }
+  height: 30em;
+  width: 10em; }
+
+#carouselExampleCaptions {
+  padding-left: 2em;
+  padding-right: 2em; }
 
 /*MENU*/
-.menu-area {
-  /*esto parece que ni anda e*/
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background: #be8c4a;
-  margin-bottom: 1em;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-shadow: #be8c4a 0px 0px 15px; }
-  .menu-area li:hover {
-    background-color: #ad8146; }
-  .menu-area li a {
-    display: block;
-    padding: 10px 22px;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 3em 1em; }
-
+/*
+.menu-area{ 
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   background: $amarilloclaro;
+   margin-bottom: 1em;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: uppercase;
+   box-shadow: $amarilloclaro 0px 0px 15px ;
+   li:hover {
+      background-color: $amarillomenos;
+   }
+   li a{
+      display: block;
+      padding: 10px 22px;
+      color: $blanco;
+      text-decoration: none;
+      margin: 3em 1em;
+   }
+}
+*/
 #navbar {
   background-color: burlywood;
   padding-top: 0;

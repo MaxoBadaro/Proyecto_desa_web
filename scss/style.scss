@@ -45,16 +45,22 @@ body {
     padding-left: 3em;
     padding-bottom: 1em; 
 }
-.slide {
-   margin-top: 10px;    
-}
+
 .slide img {
-   height: 65vh;
+   height: 30em;
+   width: 10em;
+}
+
+#carouselExampleCaptions{
+   padding-left: 2em;
+   padding-right: 2em;
+
 }
 
 /*MENU*/
 
-.menu-area{ /*esto parece que ni anda e*/
+/*
+.menu-area{ 
    list-style: none;
    display: flex;
    flex-direction: row;
@@ -76,6 +82,7 @@ body {
       margin: 3em 1em;
    }
 }
+*/
 
 #navbar{
    background-color: burlywood;
