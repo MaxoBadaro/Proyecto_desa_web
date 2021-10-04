@@ -99,7 +99,7 @@ body {
    align-items: center; /*Para ordenarlo horizontalemnte porque agregé el logo en el medio*/
 }
 
-/*HOME*/
+/*INDEX*/
 
 .contenedor{
     display: grid;
@@ -164,12 +164,81 @@ body {
     border-radius: 5px;
     padding: 1em;
 }
- 
- 
+
+.carousel-item::before{
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: #000;
+   opacity: 0.4;
+}
+
+.carousel-caption{
+   bottom: 100px;
+   padding-left: 100px;
+   padding-right: 100px;
+   h5{
+      font-size: 80px;
+      font-weight: 1000;
+      color: rgb(233, 162, 70);
+   }
+   p{
+      font-size: 18px;
+      top: 2rem;
+   }
+}
+
+.slider-btn{
+   margin-top: 30px;
+   .btn{
+      background-color: rgb(201, 201, 51);
+      color:black;
+      border-radius: solid 2px;
+      padding: 1,5rem 2rem;
+      font-size: 1rem;
+      margin-right: 15px;
+   }
+}
+
+#columna{
+   justify-content: center;
+   align-items: center;
+   #destacados{
+      width: 20em;
+   
+   }
+}
+
+
 /*PROMOCIONES*/
  
   
  /*PRODUCTOS*/
+#temporal{
+   margin-left: 2em;
+   margin-right: 2em;
+   .card{
+      margin-left: 0px;
+      margin-right: 0px;
+      max-height: 30em;
+      border: 2px solid burlywood;
+      background-color: white;
+      .card-body{
+         padding-left: 1em;
+         padding-right: 1em;
+         padding-top: 0em;
+         padding-bottom: 0em;
+      }
+      img{
+         max-height: 15em;
+      }
+   }
+}
+
   
  .box{
     display: flex;
