@@ -85,7 +85,7 @@ body {
 */
 
 #navbar{
-   background-color: burlywood;
+   background-color: rgb(233, 162, 70);;
    padding-top: 0;
    padding-bottom: 0;
    .navbar-brand{
@@ -179,8 +179,11 @@ body {
 
 .carousel-caption{
    bottom: 100px;
-   padding-left: 100px;
-   padding-right: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
    h5{
       font-size: 80px;
       font-weight: 1000;
@@ -189,6 +192,18 @@ body {
    p{
       font-size: 18px;
       top: 2rem;
+      color: rgb(233, 162, 70);
+   }
+}
+
+@media screen and (max-width: 626px){
+   .carousel-caption{
+      h5{
+         font-size: 40px;
+      }
+      p{
+         font-size: 18px;
+      }
    }
 }
 
