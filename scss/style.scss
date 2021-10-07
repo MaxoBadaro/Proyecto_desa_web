@@ -59,31 +59,6 @@ body {
 
 /*MENU*/
 
-/*
-.menu-area{ 
-   list-style: none;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   background: $amarilloclaro;
-   margin-bottom: 1em;
-   font-weight: bold;
-   text-decoration: none;
-   text-transform: uppercase;
-   box-shadow: $amarilloclaro 0px 0px 15px ;
-   li:hover {
-      background-color: $amarillomenos;
-   }
-   li a{
-      display: block;
-      padding: 10px 22px;
-      color: $blanco;
-      text-decoration: none;
-      margin: 3em 1em;
-   }
-}
-*/
-
 #navbar{
    background-color: rgb(233, 162, 70);;
    padding-top: 0;
@@ -165,6 +140,19 @@ body {
     padding: 1em;
 }
 
+/*De whatsapp*/
+.appWhatsapp{
+   position: fixed;
+   right: 26px;
+   bottom: 100px;
+   width: 60px;
+   z-index: 1000;
+}
+.appWhatsapp img{
+   width: 100%;
+   height: auto;
+}
+
 .carousel-item::before{
    content: "";
    display: block;
@@ -196,6 +184,73 @@ body {
    }
 }
 
+/*Alineacion de las fotos*/
+#imagen{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   img{
+      max-width: 80%;
+      max-height: 80%;
+   }
+}
+
+/*newsletter*/
+
+.rows {
+   height: 100vh
+}
+
+.form-control {
+   display: block;
+   width: 100%;
+   min-height: calc(1.5em + .75rem + 2px);
+   padding: .575rem .75rem;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border-radius: 52px;
+   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+   margin-bottom: 0;
+}
+
+#cards {
+   padding: 20px;
+   background-color: #eee;
+   padding-bottom: 50px;
+   padding-top: 50px;
+   margin-top: 0;
+}
+
+.form-control:focus {
+   color: #495057;
+   background-color: #fff;
+   border-color: #f9a826;
+   outline: 0;
+   box-shadow: none
+}
+
+.border-rad {
+   border-top-right-radius: 28px;
+   border-bottom-right-radius: 28px;
+   color: #fff;
+   background-color: #f9a826;
+   border-color: #f9a826
+}
+
+.border-rad:hover {
+   background-color: #f9a826;
+   border-color: #f9a826
+}
+
+/*newsletter end*/
 @media screen and (max-width: 626px){
    .carousel-caption{
       h5{
@@ -217,15 +272,44 @@ body {
       font-size: 1rem;
       margin-right: 15px;
    }
+   a{
+      text-decoration: none;
+      color: white;
+   }
+
 }
 
 #columna{
+   display: flex;
    justify-content: center;
    align-items: center;
-   #destacados{
-      width: 20em;
-   
+}
+.card-img-overlay{
+   opacity: 0.9;
+   a{
+      margin-top: 200px;
+      background-color: rgb(201, 201, 51);
    }
+   h2{
+      margin-top: 50px;
+      color:rgba(201, 201, 51, 0.9);
+      background-color: rgba(233, 162, 70, 0.7);
+      border-radius: 20px solid;
+   }
+}
+@media only screen and (min-width: 750px) and (max-width: 983px) {
+	.card-img-overlay{
+      h2{
+         font-size:1.2rem; 
+      }
+      a{
+         margin-top: 150px;
+      }
+   }
+}
+
+.col-md-4{
+   max-width: 400px;
 }
 
 
@@ -305,101 +389,128 @@ body {
 
 /*CONTACTO*/
 
-/*Lo hace responsive*/
-@media (max-width: 800px){
-   #contacto{
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
+.mainContacto{
+   margin-top: 2em;
+   margin-bottom: 2em;
+}
+.responsive-form{
+   width: 450px;
+   margin: auto;
+   background-image: linear-gradient(to bottom,rgb(245, 161, 6),rgb(245, 183, 102));
+   padding: 10px 20px;
+   box-sizing: border-box;
+}
+form{
+   width: 450px;
+   margin: auto;
+   background-image: linear-gradient(to bottom,rgb(245, 161, 6),rgb(245, 183, 102));
+   padding: 10px 20px;
+   box-sizing: border-box;
+   border-radius: 20px;
+}
+.h2contacto{
+   color: #ffffff;
+   text-align: center;
+   font-size: 30px;
+}
+input, textarea{
+   width: 100%;
+   margin-bottom: 19px;
+   padding: 7px;
+   box-sizing: border-box;
+   font-size: 17px;
+   border: none;
+}
+textarea{
+   min-height: 100px;
+   max-height: 200px;
+   max-width: 100%;
+}
+#boton{
+   background:rgb(201, 201, 51);
+   color: white;
+   padding: 7px;
+}
+#boton:hover {
+   cursor: pointer;
+}
+@media(max-width:457px){
+   .responsive-form{
+   width: 100%;
    }
 }
-
-
-form{
-   margin-bottom: 2em;
-   margin-top: 2em;
-}
-
-.container2{
-   display: flex;
-   height: 40em;
-   justify-content: center;
-   align-items: center;  
-}
-
-.contenedor-contacto {
-   background-color: $blanco ;
-   width: 51em;
-   height: 37em;
-   box-shadow: $sombra;
-   justify-content: center;
-   align-items: center;
-   border-radius:10px;
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-template-rows:  1fr 1fr 1fr 1fr;
-   grid-template-areas:
-   "tres dos"
-   "cuatro uno"
-   "cinco seis"
-   "siete ocho"
-   ;
+label{
+   color: white;
+   font-size: 20px;
    text-align: left;
-   padding: 25px;
-   margin: 10px;
-   grid-column-gap: 2em;
-   grid-row-gap: 2em;
-   font-weight: bold;
 }
+.flex-contacto{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+.divmap{
+background-attachment: fixed;
+background-image: linear-gradient(to bottom,rgb(245, 161, 6),rgb(245, 183, 102));
+border-radius: 20px;
+width: 450px;
+color: white;
 
-.form-email{
-   grid-area: uno;
 }
-.form-nombre{
-   grid-area: dos;
+@media(max-width:450px){
+   .mapsdegoogle{
+   width:320px;
+   margin-top: 20px;
+   }
 }
-.form-edad{
-   grid-area: tres;
+@media only screen and (min-width: 451px) and (max-width: 899px){
+   .mapsdegoogle{
+   margin-top: 20px;
+   }
 }
-.form-telefono{
-   grid-area: cuatro;
+@media only screen and (min-width: 900px) and (max-width: 940px){
+   .mapsdegoogle{
+   margin-left: 5px;
+   }
 }
-#form-mensaje{
-   grid-area: cinco ;
-}
-#boton-check{
-   grid-area: seis;
-}
-.boton-enviar{
-   grid-area: siete;
-}
-.boton-limpiar{
-   grid-area: ocho;
+@media only screen and (min-width: 899px) and (max-width: 904px){
+   .mapsdegoogle{
+   margin-top: 20px;
+   }
 }
 
 
 /*FOOTER*/
 
- .footer{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    background:$amarilloclaro;
-    margin-top: 2em;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    box-shadow: $amarilloclaro 0px 0px 15px ;
- }
- .iconos{
-    height: 3em;
-    width: 3em;
-    color: $negro;
- }
- .footer-referencias a{
-    color: $negro;
-    text-decoration-color: $negro;
+footer{
+   background-color: rgb(233, 162, 70);
+   h5{
+      color: white;
+   }
+   a{
+      text-decoration: none;
+      color: black;
+   }
+   .iconos{
+      height: 2em;
+      width: 2em;
+      color: white;
+   }
+   .maxo{
+      color: white;
+   }
 }
-
+.col-md-3{
+   p{
+      color: black;
+   }
+}
+.col-md-7{
+   p{
+      color:black;
+   }
+}
 /*Bootstrap*/
 .card{
    background-color: rgb(204, 162, 107);
