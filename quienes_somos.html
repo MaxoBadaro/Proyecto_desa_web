@@ -16,12 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;800&display=swap" rel="stylesheet">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="css/animate.css">
     <!--hoja de estilos-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="bodySobreNosotros">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light wow fadeIn" id="navbar">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -43,35 +45,30 @@
         </nav>  
     </header>
     <main>
-        <div class="container-fluid">
-            <div class="row justify-content-md-center">
-                    <div class="div-quienes-somos col-sm-5 col-md-4 col-lg-2">
-                        <ion-icon class="tamano" name="bonfire-outline"></ion-icon>
-                        <h2>Nuestra Misión</h2>
-                        <p>Motivar a la gente a llevar sus ideas a la realidad y a expresarse mediante la entrega de conceptos de productos inspiradores.</p>
-                    </div>
-                    <div class="div-quienes-somos col-sm-5 col-md-4 col-lg-2">
-                        <ion-icon class="tamano" name="flask-outline"></ion-icon>   
-                        <h2>Nuestra escencia</h2>
-                        <p>Nos caracterizamos en ser una empresa orientada al producto a ser una empresa centrada en el cliente y orientada a la experiencia.</p>
-                    </div>
-            
-                    <div class="div-quienes-somos col-sm-5 col-md-4 col-lg-2">
-                        <ion-icon class="tamano" name="ribbon-outline"></ion-icon>    
-                        <h2>Nuestra Promesa</h2>
-                        <p>Es brindarles los mejores productos al mejor precio.</p>
-                    </div>
-            
-                    <div class="div-quienes-somos col-sm-5 col-md-4 col-lg-2">
-                        <ion-icon class="tamano" name="radio-outline"></ion-icon>
-                        <h2>Nuestra Vibra</h2>
-                        <p>Somos un equipo interdisciplinrio que mantiene una cultura de trabajo lo mas cercana a 10Pines</p>
-                    </div>
-                </div>    
-            </div>      
-            <!--IMPORTANTE COPIAR LO DE ABAJO-->
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        </div>
+      <div class="grid-wrap">
+        <ul>
+            <li>
+                <div class="wow fadeInUpBig">
+                    <h1>Nuestra Escencia <h4>Nos caracterizamos en ser una empresa orientada al producto a ser una empresa centrada en el cliente y orientada a la experiencia.</h4></h1>
+                </div>
+            </li>
+            <li><img class="wow fadeInDownBig" src="images/sobreNosotros/resaltadores.jpeg" alt="resaltadores de colores"></li>
+            <li class="wow fadeInUpBig">
+                <h1>Nuestra Misión
+                </h1>
+                <br>
+                <h4>Motivar a la gente a llevar sus ideas a la realidad y a expresarse mediante la entrega de conceptos de productos inspiradores.
+                </h4>
+            </li>
+            <li><img class="wow fadeInDownBig" src="images/sobreNosotros/compras.jpeg" alt="señor con bolsa de compras"></li>
+            <li class="wow fadeInUpBig">
+                <h1>Nuestra Promesa</h1>
+                <br>
+                <h4>Es brindarles los mejores productos al mejor precio.</h4>
+            </li>
+            <li><img class="wow fadeInDownBig" src="images/sobreNosotros/cuaderno.jpeg" alt="cuaderno"></li>
+        </ul>
+    </div>
     </main>
     <footer class="pt-5 pb-4">
       <div class="container text-center text-md-left">
@@ -161,6 +158,11 @@
     </footer>
     <!--Para whatsapp-->  
     <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=543794562823&text=Hola,&nbsp;quiero&nbsp;información&nbsp;sobre..."><img src="./images/whatsapp.png" alt="whatsapp"></a>
+    <!--Animaciones-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <!--Bootstrap script-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> 

@@ -13,11 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;800&display=swap" rel="stylesheet">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Hoja de estilos-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light wow fadeIn" id="navbar">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,7 +41,7 @@
       </div>
     </nav>  
 </header> 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 wow fadeInUpBig">
         <div class="col">
           <div class="card">
             <img class="card-img-top" src="images/filgo.jpg" alt="apuntes">
@@ -59,17 +62,16 @@
         </div>
         <div class="col">
           <div class="card">
-            <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_664652-MLA43579630787_092020-O.webp" alt="imagen de combo">
+            <img class="card-img-top" src="images/promociones/resaltadoresFluor.jpeg" alt="resaltador fluor">
             <div class="card-body">
               <h5 class="card-title">Ofernotes imperdibles</h5>
-              <p class="card-text">Comprando un paquete de resaltadores + un mandala te damos %20 off en resaltadores</p>
-
+              <p class="card-text">Comprando un paquete de resaltadores Textliner 48 Caja X 10 Unidades te damos %20 off en resaltadores</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_743446-MLA45256294725_032021-O.webp" alt="imagen de Producto12">
+            <img class="card-img-top" src="images/promociones/resaltadoresPastel.jpg" alt="imagen de Producto12">
             <div class="card-body">
               <h5 class="card-title">Resaltadores Pastel</h5>
               <p class="card-text">10% off en Resaltadores color Pastel <br>Marca Filgo-Stabillo Boss</p>
@@ -78,16 +80,16 @@
         </div>
         <div class="col">
           <div class="card">
-            <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_947399-MLA46355850171_062021-O.webp" alt="imagen de combo">
+            <img class="card-img-top" src="images/promociones/cajitaOrdenadora.jpeg" alt="kit de microfibras y cajita organizadora">
             <div class="card-body">
               <h5 class="card-title">Día del amigo</h5>
-              <p class="card-text">Hasta 50% off <br>Subinos a tu historia de instagram para participar en el sorteo de 50% off <br>¡¡Mas etiquedados = mas chanses!!</p>
+              <p class="card-text">Hasta 50% off en microfibras y cajas organizadoras</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_947399-MLA46355850171_062021-O.webp" alt="imagen de combo">
+            <img class="card-img-top" src="images/promociones/CuadernosMarrones.jpeg" alt="cuadernos marrones apilados">
             <div class="card-body">
               <h5 class="card-title">Combo x Mayor</h5>
               <p class="card-text">Llevando mas de 10 productos obtenes %5 off en su proxima compra</p>
@@ -96,19 +98,19 @@
         </div>
         <div class="col">
           <div class="card">
-            <img class="card-img-top" src="images/filgo.jpg" alt="apuntes">
+            <img class="card-img-top" src="images/promociones/kitOrganizador.jpeg" alt="kit organizador">
             <div class="card-body">
               <h5 class="card-title">Ofernotes imperdibles</h5>
-              <p class="card-text">Comprando un paquete de resaltadores + un mandala te damos %20 off en resaltadores</p>
+              <p class="card-text">Llevando el Set Kit Organizadores de Mooving completo le hacemos 20% Off!!!</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img class="card-img-top" src="images/filgo.jpg" alt="apuntes">
+            <img class="card-img-top" src="images/promociones/comboSorteo.jpeg" alt="apuntes">
             <div class="card-body">
               <h5 class="card-title">Día del amigo</h5>
-              <p class="card-text">Hasta 50% off <br> Aprovecha las increibles ofertas para sorprender con un regalo del amigo invisible</p>
+              <p class="card-text">Seguinos y etiquetanos en tu historia para ganar este combaso</p>
             </div>
           </div>
         </div>
@@ -205,6 +207,11 @@
     </footer>
   <!--Para whatsapp-->  
   <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=543794562823&text=Hola,&nbsp;quiero&nbsp;información&nbsp;sobre..."><img src="./images/whatsapp.png" alt="whatsapp"></a>  
+  <!--Animaciones-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   <!--Bootstrap script-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>

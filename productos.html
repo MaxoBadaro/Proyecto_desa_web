@@ -13,12 +13,16 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;800&display=swap" rel="stylesheet">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Estilos-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!--EL -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light wow fadeIn" id="navbar">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -28,8 +32,8 @@
                 <a class="nav-link active" aria-current="page" href="index.html"><strong>Home</strong></a>
                 <a class="nav-link" href="productos.html"><strong>Productos</strong></a>
                 <a class="nav-link" href="promociones.html">Promociones</a>
-                <a class="navbar-brand" href="./index.html">
-                  <img src="./images/ziba-sinfondo.png" alt="logo Ziba" width="100" height="100" class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/ziba-sinfondo.png" alt="logo Ziba" width="100" height="100" class="d-inline-block align-text-top">
                 </a>
                 <a class="nav-link" href="quienes_somos.html">Quienes Somos</a>
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -39,192 +43,458 @@
           </div>
         </nav>  
     </header>
-
-        <div class="row" id="temporal">
+    <main>
+        <div class="row wow fadeInUpBig" id="temporal">
             <div class="col-12" id="Universitario">
                 <h2>Universitario</h2>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/birome filgo.jpeg" alt="birome filgo">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/birome filgo.jpeg" alt="birome filgo" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$225,18</strong></span>
+                        <span><strong>Biromes filgo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>20 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/boligrafo bic.jpeg" alt="boligrafo bic">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <!-- Modal -->
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <p>el producto se agregó al carrito de compras</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
-            </div>            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/boligrafo papermate.jpeg" alt="boligrafo papermate">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+                </div>
+            </div>
+            <!--Fin Modal-->
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/boligrafo bic.jpeg" alt="boligrafo bic" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$44,99</strong></span>
+                        <span><strong>Bolígrafos Bic</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>50 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/carpeta base a4.jpeg" alt="carpeta base a4">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/boligrafo papermate.jpeg" alt="boligrafo papermate" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$47,99</strong></span>
+                        <span><strong>Bolígrafo Paper Mate</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>50 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/carpeta clasificadora.jpeg" alt="carpeta clasificadora">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/carpeta base a4.jpeg" alt="carpeta base a4" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$64,99</strong></span>
+                        <span><strong>Carpeta base a4</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>10 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/carpeta con folios.jpeg" alt="carpeta con folios">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/carpeta clasificadora.jpeg" alt="carpeta clasificadora" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$799,00</strong></span>
+                        <span><strong>Carpeta clasificadora oficio</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>5 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/combo geometria.jpeg" alt="combo geometria">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/carpeta con folios.jpeg" alt="carpeta con folios" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$599,00</strong></span>
+                        <span><strong>Carpeta con folios oficio</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>15 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/filgo marker pastel.jpeg" alt="filgo marker pastel">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="../images/universitario/combo geometria.jpeg" alt="combo geometria" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$599,00</strong></span>
+                        <span><strong>Carpeta con folios oficio</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>15 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/goma de borrar tinta.jpeg" alt="goma de borrar tinta">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/filgo marker pastel.jpeg" alt="filgo marker pastel" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$599,00</strong></span>
+                        <span><strong>Mrker pastel Filgo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>50 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/marcador permanente filgo.jpeg" alt="marcador permanente">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/goma de borrar tinta.jpeg" alt="goma de borrar tinta" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$25,00</strong></span>
+                        <span><strong>Borrador de tinta</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>100 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/marker filgo.jpeg" alt="marcador filgo">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/marcador permanente filgo.jpeg" alt="marcador permanente" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$25,00</strong></span>
+                        <span><strong>Marcador permanente Filgo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>100 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/microfibra fluo filgo.jpeg" alt="microfibra fluor filgo">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/marker filgo.jpeg" alt="marcador filgo" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$44,99</strong></span>
+                        <span><strong>Marker Filgo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>57 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/universitario/notas adhesivas.jpeg" alt="notas adhesivas">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/microfibra fluo filgo.jpeg" alt="microfibra fluor filgo" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$54,99</strong></span>
+                        <span><strong>Micro Fluor Filgo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>59 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/microfibra fluo filgo.jpeg" alt="microfibra fluor filgo" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$54,99</strong></span>
+                        <span><strong>Micro Fluor Filgo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>45 unidades disponibles</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/universitario/notas adhesivas.jpeg" alt="notas adhesivas" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$155,00</strong></span>
+                        <span><strong>Notas adhesivas</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>45 unidades disponibles</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         <div class="row" id="temporal">
             <div class="col-12" id="Escolar">
                 <h2>Escolar</h2>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/escolar/crayon jumbo filgo.jpeg" alt="crayon jumbo filgo">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/escolar/crayon jumbo filgo.jpeg" alt="crayon jumbo filgo" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$225,00</strong></span>
+                        <span><strong>Crayones Jumbo Filgo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>15 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/escolar/elastico.jpeg" alt="elastico">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/escolar/elastico.jpeg" alt="elastico" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$350,00</strong></span>
+                        <span><strong>Bandas elasticas Uggo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>5 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/escolar/goma de borrar.jpeg" alt="goma de borrar">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/escolar/goma de borrar.jpeg" alt="goma de borrar" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$19,99</strong></span>
+                        <span><strong>Baorrador de lapiz</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>99 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/escolar/pinto borrables filgo.jpeg" alt="marcadores borrables filgo">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/escolar/pinto borrables filgo.jpeg" alt="marcadores borrables filgo" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$599,99</strong></span>
+                        <span><strong>Marcadores borrables Filgo</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>17 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/escolar/pizarrones.jpeg" alt="pizarrones">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/escolar/pizarrones.jpeg" alt="pizarrones" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$899,99</strong></span>
+                        <span><strong>Pizarrones</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>6 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/escolar/hojas.jpeg" alt="hojas">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/escolar/hojas.jpeg" alt="hojas" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$175,00</strong></span>
+                        <span><strong>Hojas artista</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>27 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/escolar/sacapuntas.jpeg" alt="sacapuntas">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/escolar/sacapuntas.jpeg" alt="sacapuntas" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$15,00</strong></span>
+                        <span><strong>Sacapuntas colores</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>53 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,48 +503,103 @@
             <div class="col-12" id="Artista">
                 <h2>Artista</h2>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/artista/acuarela filgo.jpeg" alt="acuarelas">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/artista/acuarela filgo.jpeg" alt="acuarelas" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$149,99</strong></span>
+                        <span><strong>Acuarela Filgo niños</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>22 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/artista/combo artista.jpeg" alt="acuarelas, bastidor y pinceles">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/artista/combo artista.jpeg" alt="acuarelas, bastidor y pinceles" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$1099,99</strong></span>
+                        <span><strong>Combo acrilico artista</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>2 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/artista/pinceles.jpeg" alt="pinceles">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/artista/pinceles.jpeg" alt="pinceles" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$340,00</strong></span>
+                        <span><strong>Pinceles pelo de gato</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>37 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/artista/pincel redondo.jpeg" alt="pinceles redondo">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/artista/pincel redondo.jpeg" alt="pinceles redondo" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$200,00</strong></span>
+                        <span><strong>Pinceles redondos</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>25 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/artista/tempera alba.jpeg" alt="tempera alba">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/artista/tempera alba.jpeg" alt="tempera alba" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$249,99</strong></span>
+                        <span><strong>Temperas Alba</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>10 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -283,44 +608,87 @@
             <div class="col-12" id="Polirrubro">
                 <h2>Polirubro</h2>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/polirubro/barra silicona.jpeg" alt="barra de silicona">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/polirubro/barra silicona.jpeg" alt="barra de silicona" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$49,99</strong></span>
+                        <span><strong>Barras de silicona pistola</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>100 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/polirubro/bolsa friselina.jpeg" alt="bolsas de friselina">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/polirubro/bolsa friselina.jpeg" alt="bolsas de friselina" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$130,00</strong></span>
+                        <span><strong>Bolsas de friselina colores</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>52 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/polirubro/velas cumple.jpeg" alt="velas de cumpleaños">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/polirubro/velas cumple.jpeg" alt="velas de cumpleaños" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$29,99</strong></span>
+                        <span><strong>Velitas cumpleaños</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>33 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="card">
-                    <img class="card-img-top" src="./images/polirubro/velas cumple2.jpeg" alt="otras velas de cumpleaños">
-                    <div class="card-body">
-                        <h3>Crayones Jumbo Filgo</h3>
-                        <h4>$200</h4>
+            <div class="col-md-3 col-sm-6">
+                <div class="card p-3">
+                    <div class="img-fluid">
+                        <img src="./images/polirubro/velas cumple2.jpeg" alt="otras velas de cumpleaños" width="100%" height="100%">
+                    </div>
+                    <div class="product-details">
+                        <span class="font-weight-bold d-block"><strong>$29,99</strong></span>
+                        <span><strong>Velitas cumpleaños</strong></span>
+                        <div class="buttons">
+                            <div class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-success cart-button btn-block boton-carrito">Agregar</button>
+                        </div>
+                        <div class="weight">
+                            <small>29 unidades disponibles</small>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </main>
     <footer class="pt-5 pb-4">
         <div class="container text-center text-md-left">
@@ -333,16 +701,16 @@
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold">Productos</h5>
               <p>
-                <a href="#"> Universitarios</a>
+                <a href="productos.html#Universitario"> Universitarios</a>
               </p>
               <p>
-                <a href="#"> Escolares</a>
+                <a href="productos.html#Escolar"> Escolares</a>
               </p>
               <p>
-                <a href="#"> Polirrubro</a>
+                <a href="productos.html#Polirrubro"> Polirrubro</a>
               </p>
               <p>
-                <a href="#"> Artista</a>
+                <a href="productos.html#Artista"> Artista</a>
               </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -410,6 +778,11 @@
       </footer>
     <!--Para whatsapp-->  
     <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=543794562823&text=Hola,&nbsp;quiero&nbsp;información&nbsp;sobre..."><img src="./images/whatsapp.png" alt="whatsapp"></a>
+    <!--Animaciones-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <!--Bootstrap script-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script></footer>
